@@ -24,6 +24,7 @@ document.querySelector('#push').onclick = function(){
             tasks[i].onclick = function(){
                 this.classList.toggle('completed');
             }
+            localStorage.setItem(tasks);
         }
         document.querySelector("#newtask input").value = "";
     }
